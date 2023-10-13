@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 
+// Environment variable configuration
 require("dotenv").config();
 
 const app = express();
@@ -25,7 +26,7 @@ mongoose.connect(url, {
 });
 const connection = mongoose.connection;
 connection.once("open", () => {
-  console.log("MongoDB Atlas is connected to the database!!");
+  console.log("MongoDB Atlas is connected to the database successfully!!");
 });
 
 // Routers
