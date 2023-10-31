@@ -17,7 +17,7 @@ router.route("/add").post((req, res) => {
   newUser
     .save()
     .then(() => res.json("User added successfuly!!"))
-    .catch((err) => res.status(400).json("err: ", err));
+    .catch((err) => res.status(400).json("err: " + err));
 });
 
 // get by Id

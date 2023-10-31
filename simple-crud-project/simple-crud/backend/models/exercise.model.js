@@ -10,7 +10,7 @@ const exerciseSchema = new Schema(
     date: { type: Date, require: true },
   },
   {
-    timestamps: true,
+    setTimeout: true,
   }
 );
 
